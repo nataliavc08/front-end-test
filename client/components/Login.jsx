@@ -34,17 +34,20 @@ class Login extends Component {
   render(){
     return (
       <div>
+        <p id="title">Jordanetes</p>
         <div className='fetch'>
-          <label>Welcome</label>
 
-          <input type='text' className='input' placeholder='Enter API Link' id='link' name='link' onChange={ this.handleChange }/>
-          <input type='password' className='input' placeholder='Enter TOKEN' id='token' name='token' onChange={ this.handleChange }/>
+          <input type='text' className='input' placeholder='API' id='link' name='link' onChange={ this.handleChange }/>
+          <br />
+          <br />
+          <input type='password' className='input' placeholder='TOKEN' id='token' name='token' onChange={ this.handleChange }/>
 
           <p>{ this.state.warning }</p>
 
           <button className='clickable' onClick={ this.handleClick }>FETCH</button>
         </div>
         <Sidebar />
+        <footer className="footer">An Allok8 Iteration</footer>
       </div>
     );
   }

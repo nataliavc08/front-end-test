@@ -5,7 +5,7 @@ import './styles/style'
 class App extends Component {
   render() {
     return (
-      <Wrapper />
+      <Wrapper /> 
     );
   }
 }
